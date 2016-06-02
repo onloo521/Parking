@@ -41,7 +41,7 @@ import hbie.vip.parking.utils.ToastUtils;
 public class PayOrderActivity extends BaseActivity implements View.OnClickListener  {
     private RelativeLayout back, edit;
     private ReboundScrollView scrollview;
-    //jjjjj
+    //jjjjjhhhh
     private UserInfo user;
     private ImageLoader imageLoader = ImageLoader.getInstance();
     private DisplayImageOptions options;
