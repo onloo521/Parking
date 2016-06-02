@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/btn_white_normal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dip">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="@string/pay_menu_title"
+            android:textColor="@color/whilte"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout_pay_data_search"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/title_img" />
+        </RelativeLayout>
+        <!--<ImageView-->
+            <!--android:id="@+id/add_car"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:background="@drawable/title_img" />-->
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_size_40"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/showorderinfo_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center|right"
+            android:paddingRight="@dimen/activity_size_15"
+            android:text="已缴费"
+            android:textColor="@drawable/color_green"
+            android:textSize="@dimen/text_size_15" />
+
+        <Button
+            android:id="@+id/showorderinfo_unpay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/activity_size_15"
+            android:text="未缴费"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_15" />
+
+    </LinearLayout>
+    <hbie.vip.parking.ui.list.PullToRefreshListView
+        android:id="@+id/lv_comprehensive"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/title_color"
+        android:drawSelectorOnTop="false"
+        android:scrollbars="none" >
+    </hbie.vip.parking.ui.list.PullToRefreshListView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:background="@drawable/yijianzhifu_normal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/setcurrent"
+        android:title="设为当前车辆"
+        android:textSize="15sp"
+        />
+    <item
+        android:id="@+id/unbind"
+        android:title="解除绑定"
+        android:textSize="15sp"/>
+</menu>
